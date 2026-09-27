@@ -1,25 +1,42 @@
-# BroBank
+BroBank
+Overview
+BroBank is a C programming project that simulates a transaction processing system using fundamental data structures and graph traversal algorithms.
 
-## Problem
+The project processes banking transactions through a queue, maintains successful transactions using a stack for undo functionality, and uses graph traversal techniques to explore account connections.
 
-BroBank processes transactions and uses stacks, queues, BFS, and DFS.
+Features
+Processes incoming transactions using a queue
+Supports undo functionality using a stack
+Uses BFS to explore account connections
+Uses DFS to explore account connections
+Handles successful and failed transactions
+Validates transaction inputs
+Prevents failed transactions from being added to the undo stack
+Data Structures and Algorithms
+Queue
+Incoming transactions are stored and processed using a FIFO queue structure.
 
-## Design
+Stack
+Successful transactions are stored in a stack to support undo functionality.
 
-I used a queue for transactions, a stack for undo, and BFS/DFS for account connections.
+Breadth-First Search
+BFS is used to explore account connections level by level.
 
-## Compile and Run
+Depth-First Search
+DFS is used to explore account connections by following paths as deeply as possible.
 
-`make`
+Concepts Demonstrated
+C Programming
+Data Structures
+Queues
+Stacks
+Graph Traversal
+Breadth-First Search (BFS)
+Depth-First Search (DFS)
+Modular Programming
+Error Handling
+Debugging and Testing
+Building and Running
+Compile the project:
 
-`make test`
-
-`./exercise10`
-
-## Testing
-
-I tested transactions, undo, BFS, DFS, and invalid inputs.
-
-## Bug Fixed
-
-I made sure failed transactions were not added to the undo stack.
+make
